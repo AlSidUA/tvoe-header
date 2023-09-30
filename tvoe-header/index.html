@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+	<title>TВОЄ</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="header">
+				<div class="header__top">
+					<div class="burger">
+						<span></span>
+					</div>
+					<div class="header__top-logo header__logo">
+						<a class="header__logo-link" href="#"><img src="/tvoe-header/img/Logo.svg" alt="Logo"></a>
+					</div>
+					<div class="nav">
+						<div class="header__top-menu header__menu">
+							<ul class="header__menu-list menu__list">
+								<li class="menu__list-address list__address">
+									<a href="#" class="list__address-link">Адреси магазинів</a>
+								</li>
+								<li class="menu__list-stock list__stock">
+									<a href="#" class="list__stock-link">Акції</a>
+									<img src="/tvoe-header/img/icons/stock-icons.svg" alt="Stock icons">
+								</li>
+								<li class="menu__list-information list__information">
+									<a href="#" class="list__information-link">Про компанію</a>
+								</li>
+								<li class="menu__list-delivery list__delivery">
+									<a href="#" class="list__delivery-link">Доставка і оплата</a>
+								</li>
+								<li class="menu__list-contacts list__contacts">
+									<a href="#" class="list__contacts-link">Контакти</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__top-connection header__connection">
+						<div class="header__connection-social connection__social">
+							<a href="#" class="connection__social-whatsapp"><img src="/tvoe-header/img/icons/whatsapp.svg" alt="Whatsapp"></a>
+							<a href="#" class="connection__social-telegram"><img src="/tvoe-header/img/icons/telegram.svg" alt="Telegram"></a>
+							<a href="#" class="connection__social-viber"><img src="/tvoe-header/img/icons/viber.svg" alt="Viber"></a>
+						</div>
+						<div class="header__connection-telephone connection__telephone">
+							<div class="connection__telephone-numer">+38067000000</div>
+							<div class="connection__telephone-show">показати номер</div>
+							<button class="connection__telephone-btn"><img src="/tvoe-header/img/icons/button-schow.svg" alt="Telephone btn"></button>
+						</div>
+					</div>
+					<div class="header__top-lang header__lang">
+						<a href="#" class="header__lang-ru">Рус </a>
+						<a href="#" class="header__lang-ua">Укр</a>
+					</div>
+					<div class="header__top-basket basket">
+						<button class="basket__top-btn"><img src="/tvoe-header/img/icons/basket-top.svg" alt=""></button>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="header__bottom-catalog header__catalog">
+						<img class="header__catalog-choice" src="/tvoe-header/img/icons/catalog.svg" alt="">
+						<div class="header__catalog-submenu">
+							<a href="#" class="submenu1">submenu1</a>
+							<a href="#" class="submenu2">submenu2</a>
+							<a href="#" class="submenu1">submenu1</a>
+							<a href="#" class="submenu1">submenu1</a>
+							<a href="#" class="submenu1">submenu1</a>
+						</div>
+						<p class="header__catalog-name">КАТАЛОГ</p>
+					</div>
+					<div class="header__bottom-search bottom__search">
+						<div class="header__bottom-conrainer bottom__conrainer">
+							<div class="bottom__container-box search">
+								<input class="search__field" placeholder="Пошук" type="text">
+								<button class="search__btn"><img src="/tvoe-header/img/icons/search-btn.svg" alt=""></button>
+						</div>
+						</div>
+					</div>
+					<div class="header__bottom-basket basket">
+						<button class="basket__btn"><img src="/tvoe-header/img/icons/basket.svg" alt=""></button>
+						<p class="basket__name">Кошик</p>
+					</div>
+				</div>
+			</div>
+			<div class="main">
+
+			</div>
+			<div class="footer"></div>
+		</div>
+	</div>
+	
+	
+
+	<script>
+		document.querySelector('.burger').addEventListener('click', function(){
+			this.classList.toggle('active');
+			document.querySelector('.header__menu-list').classList.toggle('open');
+			document.querySelector('.header__top-connection').classList.toggle('open');
+			document.querySelector('.header__top-lang').classList.toggle('open');
+			document.querySelector('.header__bottom-catalog').classList.toggle('open');
+		})
+		document.querySelector('.header__catalog-choice').addEventListener('click', function(){
+			this.classList.toggle('active');
+			document.querySelector('.header__catalog-submenu').classList.toggle('open');
+		})
+	</script>
+</body>
+</html>
